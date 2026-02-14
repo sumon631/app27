@@ -1,0 +1,101 @@
+:root {
+  --bg: #f4f7ff;
+  --primary: #204ecf;
+  --primary-dark: #173897;
+  --text: #1f2937;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hind Siliguri", "Noto Sans Bengali", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(125deg, var(--primary), #4668d9);
+  color: #fff;
+  padding: 88px 0;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  margin: 16px 0 8px;
+}
+
+.lead {
+  max-width: 700px;
+  margin: 0 auto 22px;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary-dark);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section.alt {
+  background: #eaf0ff;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+.course-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.highlight {
+  border: 2px solid #c9d7ff;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 12px 28px;
+  color: #4b5563;
+}
